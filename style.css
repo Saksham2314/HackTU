@@ -1,0 +1,296 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 100px; /* Adjusted for fixed header */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #2a9d8f, #264653);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15 px;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(124, 13, 13, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    margin-top: 120px; /* Adjusted for fixed header */
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Introduction Section */
+.introduction {
+    background: linear-gradient(to right, #ffffff, #f1f1f1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introduction:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.introduction h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.introduction .responsive-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.step {
+    width: 30%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.step h3 {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.step-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Patient Benefits Section */
+.patient-benefits {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.patient-benefits h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.patient-benefits ul {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.patient-benefits li {
+    margin-bottom: 15px;
+}
+
+.patient-benefits .responsive-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #264653;
+}
+
+/* Links Section */
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #2a9d8f;
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #264653;
+}
+
+/* FAQ Section */
+.faq {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: #264653;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #2a9d8f;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+footer p {
+    opacity: 0.8;
+}
