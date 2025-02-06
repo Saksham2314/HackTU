@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Company Sign Up/Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="company-auth">
+        <h2>Medical Company Sign Up / Sign In</h2>
+        
+        <!-- Sign Up Form -->
+        <div id="signup-form">
+            <h3>Sign Up</h3>
+            <form action="submit-signup.php" method="POST">
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" name="company-name" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="company-signup.html#signin-form">Sign In</a></p>
+        </div>
+
+        <!-- Sign In Form -->
+        <div id="signin-form" style="display:none;">
+            <h3>Sign In</h3>
+            <form action="submit-signin.php" method="POST">
+                <label for="signin-username">Username</label>
+                <input type="text" id="signin-username" name="signin-username" required>
+
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" name="signin-password" required>
+
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="company-signup.html#signup-form">Sign Up</a></p>
+        </div>
+
+        <script>
+            // Toggle between sign up and sign in
+            const signupForm = document.getElementById("signup-form");
+            const signinForm = document.getElementById("signin-form");
+            const signupLink = document.querySelector('a[href="#signup-form"]');
+            const signinLink = document.querySelector('a[href="#signin-form"]');
+
+            signupLink.addEventListener("click", () => {
+                signupForm.style.display = "block";
+                signinForm.style.display = "none";
+            });
+
+            signinLink.addEventListener("click", () => {
+                signupForm.style.display = "none";
+                signinForm.style.display = "block";
+            });
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Medicine Testing Platform | All Rights Reserved | Developed by [Your Company]</p>
+    </footer>
+</body>
+</html>
+
+

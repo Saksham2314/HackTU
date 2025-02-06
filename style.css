@@ -1,8 +1,259 @@
 /* Global Styles */
+/* Make the FAQ button stand out */
+.faq-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.faq-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the image gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.image-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* FAQ Section Styling */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #e9ecef;
+}
+
+.faq-question:hover {
+    background-color: #dcdcdc;
+}
+
+/* Display FAQ answer when clicked */
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+/* Styling for the register and login buttons */
+
+.header-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.register-button, .login-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.register-button:hover, .login-button:hover {
+    background-color: darkgreen;
+}
+
+/* Register Button */
+.register-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+}
+
+/* Registration Form */
+.registration-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Landing Page */
+.landing-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.landing-page h1 {
+    font-size: 3rem;
+    color: #2a9d8f;
+}
+
+.landing-page p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.role-selection button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.role-selection button:hover {
+    background-color: #264653;
+}
+
+/* Company Auth Page */
+.company-auth {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.company-auth h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+.company-auth form {
+    margin-top: 20px;
+}
+
+.company-auth label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.company-auth input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.company-auth button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.company-auth button:hover {
+    background-color: #264653;
+}
+
+.company-auth p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.company-auth a {
+    color: #2a9d8f;
+    text-decoration: none;
+}
+
+.company-auth a:hover {
+    text-decoration: underline;
+}
+
 * {
-    margin: 0;
+    margin: 1 px;
     padding: 0;
     box-sizing: border-box;
+}
+p{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #021412;
+    margin-bottom: 1 px;
 }
 
 body {
@@ -65,135 +316,135 @@ main {
     margin-right: auto;
 }
 
-/* Introduction Section */
-.introduction {
-    background: linear-gradient(to right, #ffffff, #f1f1f1);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.introduction:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.introduction h2 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.introduction p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-.introduction .responsive-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* How It Works Section */
-.how-it-works {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.how-it-works:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.how-it-works h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #2a9d8f;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.steps {
+.study-process {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.study-step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
-}
-
-.step {
-    width: 30%;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.step:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-.step h3 {
-    font-size: 1.6rem;
-    margin-top: 10px;
-    color: #333;
-}
-
-.step p {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
-}
-
-.step-img {
-    width: 100%;
+    background: white;
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 850px;
+   
 }
 
+.step-icon-container {
+    flex-shrink: 0;
+}
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+h3 {
+    font-size: 1.75em;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+}
 /* Patient Benefits Section */
 .patient-benefits {
-    background: #ffffff;
+    background-color: #f9f9f9;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
 .patient-benefits h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #2a9d8f;
-    margin-bottom: 20px;
+    color: #333;
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.patient-benefits ul {
-    font-size: 1.2rem;
+.patient-benefits p {
+    text-align: center;
     color: #555;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
-.patient-benefits li {
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.benefit-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-.patient-benefits .responsive-image {
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.1);
+}
+
+/* Responsive image below benefits */
+.responsive-image {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Align images in the center */
+    gap: 20px; /* Add spacing between images */
     margin-top: 20px;
+}
+
+.image-container img {
+    width: 30%; /* Make images equal in size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
 
 /* CTA Button */
@@ -233,6 +484,7 @@ main {
 }
 
 /* FAQ Section */
+/* FAQ Section */
 .faq {
     background: #ffffff;
     padding: 40px;
@@ -264,6 +516,9 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq-question:hover {
@@ -275,10 +530,26 @@ main {
     font-size: 1rem;
     margin-top: 10px;
     color: #555;
+    padding-left: 15px;
 }
 
 .faq-item.active .faq-answer {
     display: block;
+}
+
+.faq-item.active .faq-question {
+    background-color: #2a9d8f;  /* Change color when active */
+}
+
+.faq-item .faq-question::after {
+    content: '\002B';  /* Adds a plus sign */
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+}
+
+.faq-item.active .faq-question::after {
+    content: '\2212';  /* Adds a minus sign when active */
 }
 
 /* Footer Section */

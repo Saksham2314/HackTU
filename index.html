@@ -11,67 +11,89 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="mypic.png" alt="Platform Logo" class="logo">
+            <img src="logo.png" alt="Platform Logo" class="logo">
             <h1>Global Medicine Testing Platform</h1>
             <br>
-          
             <p>Ensuring Safe, Transparent, and Ethical Clinical Trials</p>
-         
+            
+            <!-- Register, Login and FAQ Buttons at the top-right -->
+            <div class="header-buttons">
+                <a href="register.html" class="register-button">Register</a>
+                <a href="login.html" class="login-button">Login</a>
+                <a href="#faq" class="faq-button">FAQ</a>
+            </div>
         </div>
     </header>
 
     <main>
-        
         <section class="introduction">
             <h2>Welcome to the Global Medicine Testing Platform</h2>
             <p>
                 Our platform connects pharmaceutical companies with patients worldwide to ensure that new medicines are tested ethically, securely, and transparently. With direct collaboration with the World Health Organization (WHO), we provide a platform for conducting clinical trials that prioritize patient safety and uphold the highest standards of scientific integrity.
             </p>
-            <img src="https://via.placeholder.com/800x400" alt="Medicine Testing Process" class="responsive-image">
         </section>
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <img src="https://via.placeholder.com/300x200" alt="Step 1: Upload Docs" class="step-img">
-                    <h3>Step 1: Upload Documents</h3>
-                    <p>Upload the necessary documents required for clinical trials. Ensure everything is complete for validation.</p>
+
+        <section class="study-process">
+            <div class="study-step">
+                <div class="step-icon-container">
+                    <img src="dsv1.png" alt="Screening Visit Icon" class="step-icon">
                 </div>
-                <div class="step">
-                    <img src="https://via.placeholder.com/300x200" alt="Step 2: Patient Registration" class="step-img">
-                    <h3>Step 2: Patient Registration</h3>
-                    <p>Register patients for clinical trials by entering relevant details. Choose the patient profiles according to your needs.</p>
+                <div class="step-content">
+                    <h3>Screening Visit</h3>
+                    <p>Once you have consented to participate in a study, you may be asked to undergo other procedures and tests, such as filling out questionnaires or having blood work, to confirm that you qualify for the study. You may be asked to make a special visit for screening.</p>
                 </div>
-                <div class="step">
-                    <img src="https://via.placeholder.com/300x200" alt="Step 3: Trial Monitoring" class="step-img">
-                    <h3>Step 3: Trial Monitoring</h3>
-                    <p>Monitor the progress of trials, track results, and manage real-time data to ensure everything progresses smoothly.</p>
+            </div>
+            <div class="study-step">
+                <div class="step-icon-container">
+                    <img src="Screenshot 2025-02-06 235758.png" alt="Enrollment Icon" class="step-icon">
+                </div>
+                <div class="step-content">
+                    <h3>Enrollment and Participation</h3>
+                    <p>Once you have enrolled, the study team will review the study procedures with you and schedule tests and other appointments. You will follow the trial procedures and report any issues or concerns to the study team. Remember, participating in a clinical study is totally voluntary and you can decide to stop at any time. Study participants continue to see their regular physician for usual health care throughout the study.</p>
+                </div>
+            </div>
+            <div class="study-step">
+                <div class="step-icon-container">
+                    <img src="dsv2.png" alt="End of Study Icon" class="step-icon">
+                </div>
+                <div class="step-content">
+                    <h3>End of Study</h3>
+                    <p>Your participation in the study is complete. Researchers may provide participants with information about how they may find results once the study data is analyzed.</p>
                 </div>
             </div>
         </section>
+
         <section class="patient-benefits">
             <h2>Benefits for Patients</h2>
             <p>Participating in clinical trials offers numerous advantages, including:</p>
-            <ul>
-                <li>Access to cutting-edge treatments before they are publicly available.</li>
-                <li>Close medical supervision and regular monitoring.</li>
-                <li>Potential for free medical treatment and medicines.</li>
-            </ul>
-            <img src="https://via.placeholder.com/800x400" alt="Patient Benefits" class="responsive-image">
-        </section>
-
-        <section class="resources">
-            <h2>Learn More</h2>
-            <p>Watch the video and explore additional resources to understand the platform and clinical trials better.</p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                <button class="cta-button">Watch Trial Overview Video</button>
-            </a>
-            <div class="links">
-                <a href="https://www.who.int/health-topics/clinical-trials" target="_blank">Learn More about Clinical Trials (WHO)</a>
-                <a href="https://www.fda.gov/consumers/consumer-updates/clinical-trials-what-patients-need-know" target="_blank">FDA: Clinical Trials – What Patients Need to Know</a>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    
+                    <p>Access to cutting-edge treatments before they are publicly available.</p>
+                </div>
+                <div class="benefit-item">
+                    
+                    <p>Close medical supervision and regular monitoring.</p>
+                </div>
+                <div class="benefit-item">
+                    
+                    <p>Potential for free medical treatment and medicines.</p>
+                </div>
             </div>
+        
+                
+                
+                <div class="image-container">
+                    <img src="imgg1.png" alt="Benefit 1">
+                    <img src="img2.png" alt="Benefit 2">
+                    <img src="img3.png" alt="Benefit 3">
+                
+            </div>
+            
         </section>
-        <section class="faq">
+        
+
+        <section class="faq" id="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
                 <button class="faq-question">What is the purpose of this platform?</button>
@@ -94,40 +116,14 @@
             <div class="faq-item">
                 <button class="faq-question">How do I get started with the platform?</button>
                 <div class="faq-answer">
-                    <p>To get started, simply sign up for an account, upload the required documents, and you will be guided through the rest of the process. The platform is designed to be user-friendly and intuitive.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Are clinical trials free to participate in?</button>
-                <div class="faq-answer">
-                    <p>Yes, clinical trial participation is free for patients. In some cases, patients may also be compensated for their time and travel expenses, depending on the trial's requirements.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">What are the qualifications of the medical professionals on the platform?</button>
-                <div class="faq-answer">
-                    <p>All medical professionals involved in the clinical trials are licensed and adhere to strict ethical and medical standards. The platform ensures that only qualified professionals are involved in trial management and patient care.</p>
+                    <p>To get started, simply register on the platform. After registration, you can upload your documents, register patients, and begin monitoring trials.</p>
                 </div>
             </div>
         </section>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="main.html">Platform</a></li>
-                <li><a href="faq.html">FAQ</a></li> <!-- Link to FAQ page -->
-            </ul>
-        </nav>
-        
-        <footer>
-            <p>&copy; 2025 Medicine Testing Platform | All Rights Reserved | Developed by [Your Company]</p>
-          
-                
-           
-            
-        </footer>
     </main>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+              
